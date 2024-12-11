@@ -1,0 +1,148 @@
+.all{
+    border: solid 3px;
+    height: 666px;
+    margin-left: -6rem;
+    margin-right: -6rem;
+    border-radius: 25px;
+    margin-top: -1px;
+}
+#h1{
+    font-size: 55px;
+    position: absolute;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+.navigation a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(25, 25, 25);
+    transition: 0.2s;
+}
+
+.navigation a:hover{
+    color: rgb(169, 0, 211);
+}
+
+.navigation{
+    position: absolute;
+    background-color: #D9D9D9;
+    width: 35%;
+    padding: 10px;
+    border: solid 2px;
+    border-radius: 15px;
+    margin-left: 44rem;
+    margin-top: 2rem;
+}
+.logout{
+    position: absolute;
+    background-color: #D9D9D9;
+    width: 5%;
+    padding: 10px;
+    border: solid 2px;
+    border-radius: 15px;
+    margin-left: 80rem;
+    margin-top: 2rem;
+}
+.logout a{
+    font-size: 20px;
+    color: rgb(25, 25, 25);
+}
+.logout a:hover{
+    color: rgb(169, 0, 211);
+}
+#active{
+    color: rgb(169, 0, 211);
+}
+.div{
+    width: 95.4%;
+    background-color: rgb(25, 25, 25);
+    border: solid 2px;
+    position: absolute;
+    margin-top: 7rem;
+}
+.list{
+    text-align: center;
+    margin-top: 11rem;
+    max-height: 30rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.list th{
+    font-size: 30px;
+    padding-bottom: 2rem;    
+}
+.list td{
+    font-size: 20px;
+}
+.list table{
+    margin-left: 5rem;
+    width: 92%;
+}
+.holderedit{
+    margin: auto;
+    width: 60rem;
+    height: 30rem;
+    background-color: white;
+    border: solid 3px;
+    margin-top: 10rem;
+    border-radius: 15px;
+}
+.sticker{
+    position: absolute;
+    color: white;
+    background-color: #161616;
+    padding: 1rem;
+    width: 6rem;
+    margin-top: 9rem;
+    margin-left: 70rem;
+    font-size: 30px;
+    border-radius: 10px;
+}
+#namaiwa{
+    font-size: 30px;
+}
+#emailz{
+    font-size: 18px;
+}
+#label1{
+    font-size: 25px;
+    margin-right: 33rem;
+    margin-top: 4rem;
+}
+#label2{
+    margin-top: -6.5rem;
+    font-size: 25px;
+    margin-left: 16.5rem;
+}
+#input{
+    font-family: custom-font;
+    font-size: 20px;
+    padding: 10px;
+    width: 15rem;
+    border: solid 2px;
+    border-radius: 10px;
+    margin-right: 24rem;
+}
+#select{
+    font-family: custom-font;
+    font-size: 20px;
+    padding: 12px;
+    width: 17rem;
+    border: solid 2px;
+    border-radius: 10px;
+    margin-left: 23rem;
+}
+#save{
+    margin-top: 5rem;
+    width: 6rem;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #c096fed6;
+}
+#cnc{
+    width: 7rem;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #F84949;
+}
