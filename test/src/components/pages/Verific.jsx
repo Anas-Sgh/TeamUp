@@ -1,7 +1,38 @@
 import Nav from './Nav'
 import './Verific.css'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 function Verific() {
+
+  const [code, setCode] = useState(null);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const uid = location.state?.uid;
+  
+  
+
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    try {
+      const response = await fetch('http://localhost:3000/codeverfifer', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({id: uid, code}),
+        
+      });
+      
+      if (response.ok) {
+         navigate('/Reset',{ state : {uid} }); 
+      } else {
+        alert("Wrong Code !")
+      }
+    } catch (error) {
+      console.error('Error occurred:', error);
+    }
+  };
 
   return (
     <>
@@ -11,9 +42,9 @@ function Verific() {
         Verification
       </div>
       <div className='input5'>
-        <form action="">
+        <form onSubmit={handleSubmit}>
             Put the Verification code: <br /><br />
-            <input type="text" placeholder='Put the code here !'/><br /><br />
+            <input  onChange={(e)=>{setCode(e.target.value)}} type="text" placeholder='Put the code here !'/><br /><br />
           <button type="submit" className='button5'>Submit</button>
         </form>
       </div>
