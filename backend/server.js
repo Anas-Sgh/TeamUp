@@ -1,8 +1,9 @@
 const express = require("express"); 
 const bodyParser = require("body-parser");
 const cors = require('cors');
-const { login, addProfile } = require("./controller/profileController");
-const { fetchUsers } = require("./controller/adminController");
+const { login, addProfile, forgetPassword, IsValidCode, UpdatePasseWord, getUserById} = require("./controller/profileController");
+const { fetchUsers, UpdateDepartement} = require("./controller/adminController");
+const { fetchdeps } = require("./controller/departementController");
 
 require('./config/connection');
 
@@ -23,7 +24,12 @@ app.use(express.json());
 app.get("/users", fetchUsers); 
 app.post("/profiles", addProfile);
 app.post("/login", login);
-
+app.post("/forget", forgetPassword);
+app.post("/codeverfifer", IsValidCode);
+app.post("/reset-password", UpdatePasseWord);
+app.get("/users/:id", getUserById);
+app.get("/deps", fetchdeps);
+app.post("users/:id", UpdateDepartement);
 
 // Start the server
 app.listen(3000, () => {
