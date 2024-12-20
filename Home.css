@@ -1,0 +1,62 @@
+body1{
+    height: 200%;
+}
+#Bigl{
+    margin-left: 5rem;
+    font-size: 100px;
+    text-align: left;
+    margin-top: 5rem;
+}
+#sig{
+    text-align: left;
+    font-size: 50px;
+    margin-top: -50px;
+}
+.topb{
+    font-size: 25px;
+    background-color: #cf67e158;
+    border-color: #F176FD;
+    color: black;
+    width: 8rem;
+    height: 3.5rem;
+    padding: 0px;
+    border-radius: 15px;
+    position: absolute;
+    margin-left: 35rem;
+    margin-top: -1rem;
+}
+.botb{
+    margin-top: 5rem;
+    font-size: 30px;
+    background-color: #060606dc;
+    border-color: #929292;
+    border-width: 2px;
+    color: white;
+    width: 15rem;
+    height: 4rem;
+    padding: 0px;
+    border-radius: 25px;
+}
+
+img{
+    margin-top: 5rem;
+    margin-left: -45rem;
+}
+
+.footer1{
+    margin-top: 2rem;
+    text-align: left;
+}
+.footer1 .line{
+    width: 80rem;
+    border: solid;
+    border-width: 1px;
+}
+.lorem{
+    position:absolute;
+    font-size: 30px;
+    text-align: left;
+    margin-top: -35rem;
+    margin-left: 45rem;
+    margin-right: 5rem;
+}

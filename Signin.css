@@ -1,0 +1,84 @@
+.container{
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    padding: 200px;
+    width: 12rem;
+    position: absolute;
+    margin-left: 22rem;
+    margin-top: -5rem;
+    height: 10rem;  
+}
+.holder{
+    color: white;
+    background-color: #161616;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -16rem;
+    margin-left: -20px;
+}
+.input{
+    position: absolute;
+    font-size: 20px;
+    text-align: left;
+    margin-top: -100px;
+    margin-left: -5rem;
+    padding-bottom: 4rem;
+}
+.input input{
+    border: black;
+    width: 300px;
+    height: 1px;
+    padding: 25px;
+    border-width: 3px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: solid;
+    font-size: 20px;
+    font-family: custom-font, sans-serif;
+}
+
+.input a{
+    color: #5797EB;
+    font-size: 20px;
+}
+
+.button{
+    font-size: 25px;
+    color: #161616;
+    background-color: #cbaafc;
+    border-radius: 15px;
+    border-color: #8C00FF;
+    width: 12rem;
+    margin-left: 6rem;
+    padding: 10px;
+}
+
+.small{
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+form .small{
+    text-align: center;
+}
+
+.footer{
+    margin-top: 32rem;
+    text-align: left;
+}
+.footer .line{
+    width: 80rem;
+    border: solid;
+    border-width: 1px;
+}
+#right{
+    text-align: right;
+}
