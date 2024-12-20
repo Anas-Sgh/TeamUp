@@ -64,17 +64,17 @@ function EditUser() {
   };
 
   const handleSave = async () => {
-      const department = selectedDepartment;
-
+    const department = selectedDepartment;
+  
     try {
       const response = await fetch(`http://localhost:3000/users/${id}`, {
-        method: 'POST',
+        method: 'PUT', // Use PUT instead of POST
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(department),
+        body: JSON.stringify({ department: selectedDepartment }),
       });
-
+  
       if (response.ok) {
         alert('User updated successfully!');
         navigate('/Admin');
@@ -86,6 +86,7 @@ function EditUser() {
       alert('Error saving user');
     }
   };
+  
 
   return (
     <div className="all">
