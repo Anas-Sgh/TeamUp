@@ -24,8 +24,10 @@ const UpdateDepartement = async (req, res) => {
   const { department } = req.body;
 
   // Validate input
-  if (!department || !id) {
-    return res.status(400).json({ error: "Missing 'depart' or 'idUser' in request parameters." });
+  if (!id || !department) {
+    return res.status(400).json({
+      error: "Missing required fields. Ensure 'id' and 'department' are provided.",
+    });
   }
 
   try {
@@ -33,7 +35,7 @@ const UpdateDepartement = async (req, res) => {
     db.query(query, [department, id], (err, result) => {
       if (err) {
         console.error("Error updating profile:", err.message);
-        return res.status(500).json({ error: "Failed to update profile." });
+        return res.status(500).json({ error: "Database query failed." });
       }
 
       // Check if any rows were updated
