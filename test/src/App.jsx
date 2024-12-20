@@ -5,7 +5,7 @@ import './App.css'
 
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Forget from './components/pages/forget';
+import Forget from './components/pages/Forget';
 import Reset from './components/pages/Reset';
 import Verific from './components/pages/Verific';
 import Home from './components/pages/Home';
